@@ -4,7 +4,7 @@
 setwd("~/securitynow")
 
 # Change first.show.number and last.show.number depending on the files you have
-first.show.number <- 1
+# first.show.number <- 1
 last.show.number <- 400
 
 # Create empty data frame
