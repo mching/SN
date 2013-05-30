@@ -1,7 +1,7 @@
 # Script to extract show info such as date and title
 # from each Security Now show
 
-setwd("~/securitynow")
+setwd("~/Documents/securitynow/shows")
 
 # Change first.show.number and last.show.number depending on the files you have
 # first.show.number <- 1

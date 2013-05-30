@@ -1,4 +1,4 @@
-setwd("~/securitynow")
+setwd("~/Documents/securitynow/shows")
 
 for(i in 100:400) {
   shortname <- paste0("sn-", i, ".txt")
