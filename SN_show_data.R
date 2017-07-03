@@ -1,14 +1,14 @@
 # Script to extract show info such as date and title
 # from each Security Now show
 
-setwd("~/Documents/securitynow/shows")
+DIRECTORY <- "~/Documents/securitynow/shows/"
 
 # Change first.show.number and last.show.number depending on the files you have
-# first.show.number <- 1
-last.show.number <- 400
+first.show.number <- 600
+last.show.number <- 618
 
 # Create empty data frame
-data <- data.frame(id = 1:last.show.number, date = NA, title = NA)
+data <- data.frame(id = first.show.number:last.show.number, date = NA, title = NA)
 
 # Fix id column to 3 digit numbers
 
@@ -23,7 +23,7 @@ for(i in 10:99) {
 }
 
   
-for(i in 1:last.show.number) {
+for(i in first.show.number:last.show.number) {
   # Read file in
   show.file.name <- paste0("sn-", data$id[i], ".txt")
   showtext <- readLines(show.file.name, n = 8L)
